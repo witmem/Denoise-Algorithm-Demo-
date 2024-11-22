@@ -1,4 +1,5 @@
-###### ![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDg1YTU1MDZiMDZjYzQ5ZGZlOTA5NWU1YzdiMjE5YTZfdGVLOHFDSlZFNzM2UXlYcjBrNm4zTVgwM3Z0dWdLbVRfVG9rZW46TktZQmJ4RHJqbzE2WFN4bzhnaWN4ZkRHbmZjXzE3MjkyMzI4Nzg6MTcyOTIzNjQ3OF9WNA)
+<img width="138" alt="image" src="https://github.com/user-attachments/assets/21a66c62-661c-4614-a07c-c45c59233ced">
+
 
 #                              **知存科技Denoise Demo使用说明**                                                                                                                  
 
@@ -17,11 +18,12 @@ WTMDK2101-X3是针对WTM2101 AI SOC设计的评估板，包含：
 1. WTM2101核心板，即我们的存算芯片。
 2. 和I/O 板：WTM2101运行需要的电源、以及应用I/O接口等.
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=NWFhNzRkZjdlYjk2YWEzZDQzZmEwMzNmZTA5YjA2YmNfYndlTU5nQ2Q1eVNCZlJlT0FCRWczVUVzUnhla3gyOHJfVG9rZW46RmNkRmJKN0lIb3lUbm14cHVPemNuTzNmblFhXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="115" alt="image" src="https://github.com/user-attachments/assets/065c6279-b1ae-4538-b1cb-7d6dd56e2298">
 
 核心板示意图
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=MWUwMGM4ZTU4YWU2ODZhODlmMzczODA4YjdjY2I3YjdfRVBrMnZxWW9BSFF5cklKdVlWVTZXVTFLVFFwTWtjaXNfVG9rZW46Q2FsSGJDVTBtb2ZzUnZ4QnBpMmNZQmZmblFmXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/3456d174-f7e2-43ff-a3fb-2b186385c655">
 
 WTMDK2101-X3 I/O 板示意图
 
@@ -95,7 +97,8 @@ mapper是知存工具链制定的一套工具，目的在于将模型转换至�
 
 进入mapper文件夹下, input文件夹下为转mapper需要的的输入。
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=Mjg3NTgwOTMyNDc3MmMxNjZmODE2ZTU2MjE5MjY3OTRfZ0hlYnRUb1B1azIwcExxbXk3WExnaXJaZlpQZzdYSmxfVG9rZW46QU5zRWJCMjhHb0xiMzh4NmtLTmNLcUVqbkpFXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/f5239d7f-d762-4eed-babc-50986ddb5ee3">
+
 
 其中：
 
@@ -103,18 +106,18 @@ mapper是知存工具链制定的一套工具，目的在于将模型转换至�
 - opt.protobuf为模型优化策略配置文件，是可选项。
 - quant_data.npy用于模型精度校准。
 - gen_mapper.py为转换脚本，其中网络输入形状、名称等，需与模型适配（如图所示）。
+  
+<img width="261" alt="image" src="https://github.com/user-attachments/assets/1f6c8172-d794-4b02-86b9-99c35c7b91c7">
 
  
-
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=NDU1NDMwMjMzZWY5NGExM2FhOWYxMjg1MDYyZDA5ODlfRG5FYnRDbENhUGp2SlVJMjRYd0lpRTFvYXJpTWVaVmJfVG9rZW46RE9NMWI4N1lkb2pMWEN4Z0JyMGNXd1ZRblZlXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2I1YmJjMTVlODg2NTc5YTEzMzYxNTJmOTk5MmM4YWVfNEowdzB5dzBLQldFeHdoTTAxeWx1aFlzWGU1SzdWNWdfVG9rZW46T25IMGJ2WFVCb01GR0h4WWxEOWN5dFVHbkpmXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
-
 ### 2.3、生成map
 
 （1）通过Xftp将mapper/input文件夹传输到2.1.（4）建立的文件夹下，如/home/guest/csdn/yourname/input，执行gen_mapper.py，转换输出在/home/guest/csdn/yourname/output，将output文件夹传输回本地。
 
 （2）mapper的生成产物示例位于mapper/output：
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=MjBhZDM1NjcxZDY2ZmVkMTg1ZTBhZjFmNWZmM2U4MmJfcjJHOWhZSE80N2J2YXY1SkYzS0pKQk9naVEyNjVpa1lfVG9rZW46SUdxeWJYeUh0b3d1eXd4V3R2MmNuSUZObmlRXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="122" alt="image" src="https://github.com/user-attachments/assets/2f4d9a59-a121-4a81-b8c6-f252d52457a0">
+
 
 ## 3、烧写NPU权重
 
@@ -122,9 +125,9 @@ NPU权重烧写有两种方式，二选一即可。
 
 ### 3.1、方式一：使用NPU烧写板（NPU烧录器）
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=MTYwMjNhMWVjMzFjYTY3YmYxMTExNzI4YWQzNzcyZGRfQXhCOHJFZVRtdW5jN0JRNFh3NXlneFh3bGpndmdwak9fVG9rZW46SEV2aWI2VW1ob1h2TWN4OTQzV2NIbVUybmJiXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
-
 （1）系统连接：进行模型烧录和开发时，我们需要将JTAG，核心板，NPU烧写板连接好，并打开开关，如系统连接示意图所示。
+<img width="282" alt="image" src="https://github.com/user-attachments/assets/41cab733-4d6c-4fd3-aaf2-80211c2655c1">
+
 
 （2）跳线帽连接：如跳线帽连接示意图所示，按照红框标注进行跳线连接。      
 
@@ -140,7 +143,8 @@ NPU权重烧写有两种方式，二选一即可。
 | 6    | RXD      | P17      | 串口                        |
 | 7    | TXD      | P16      |                             |
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=NGZlZWYwNDBiZDQ2ZDgwMzYzMWNkMzBhMjY5YjY0M2ZfZ3FvZ0I3TWh1dEgxenQxZ0poa2RDek5pNkxFUzVIeWZfVG9rZW46TDhON2I5MVRib0dPY2x4RE91OWNXckZpblhmXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/c43cfc25-878b-4f3d-bf45-c732cc9a503e">
+
 
 跳线帽连接示意图
 
@@ -156,7 +160,8 @@ NPU权重烧写有两种方式，二选一即可。
 
 示例:
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTRiZTIyMDE5M2E2ZjYzMWQ1NDUxZWJlZDgxZWI2ZDBfcmQxTzNOa0l0N0JZYlprazVKYzZYNVJveVhHc3dZY1JfVG9rZW46THR0bGJMZTR4b3hIeHV4bEs1a2NVM2hSbjVjXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="415" alt="image" src="https://github.com/user-attachments/assets/80611768-e0c2-4a87-9a73-874206cbb3cb">
+
 
 ### 3.2、方式二：不用NPU烧录器
 
@@ -188,7 +193,8 @@ NPU权重烧写有两种方式，二选一即可。
 
 （4）Target->Download下载工程（ctrl + D）：
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=NzAzNjU0OGJlNmY2MGUwOGRlNjRmZWZjNjU1NjE4NTNfaGlydXpvakptSmhtdnczUG9KSjRtVzNsN3IxQ0wzOXFfVG9rZW46UVYxcGJYRVhsb3FoSXB4ZXFvTmM0YXd4bjJlXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="248" alt="image" src="https://github.com/user-attachments/assets/82ad49bd-3980-4d78-a971-f0f228f694c7">
+
 
 注：本demo用x3开发板，所用串口GPIO为16,17。若是其他开发板，请根据情况修改。
 
@@ -196,15 +202,18 @@ NPU权重烧写有两种方式，二选一即可。
 
 **正确输出见下图：**
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=NGU0ZDhmMGM2YzhjNDM4YmZlZTVhODJmYmI5Y2JhZDlfSFQ0dnZMdk5MUzJwdFR6R1dtb2lET1RReWRYVEhYNHdfVG9rZW46VzhIZmJsQTRsb21KeFd4eTVzNGMwU2RSbmhBXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/b7666c9d-2c52-493b-96a5-d261be38029a">
+
 
 (6) **灌数据测试**
 
 进入upper_machine目录，双击AudioEnhancement-v4.1.3.exe，按照如下步骤设置后点击“Run”，开始往开发板下发数据用于测试，测试完后降噪后的音频保存在upper_machine\wav_out 目录下，**至此demo完成。**
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=NjU4ZDliOTkzOTMwNjVlNjFmOWVlMjBlYWNiMGM5MDdfYVJTWnIzYWExTlVDWmFMM0kzbUxCVU9SSUVaVFJORktfVG9rZW46RnRJVGJpZ0dEb200MFh4SXJIVWNQU0hQbmhnXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/40d71225-32f5-43d3-b55a-ac8eb42c384f">
 
-![img](https://iucylxooqp.feishu.cn/space/api/box/stream/download/asynccode/?code=NDAyMWQyYWQ3NzZiNDNjMDhkNTkwYzI0ODVkZDg1MDNfaVJ4dWQzRjIzcjVQTTk4RnFheUhRNVdGV2lvZXBSNDlfVG9rZW46TzJpVmJ3aHVOb1Z4dlF4b2NRM2NGUlZCbkUxXzE3MjkyMzI4NDA6MTcyOTIzNjQ0MF9WNA)
+
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/5701aceb-4a1e-4a4f-a3e6-78db928e311a">
+
 
 修订历史:
 
